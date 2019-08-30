@@ -7,31 +7,32 @@
 \url{https://erj.ersjournals.com/content/early/2019/05/08/13993003.00224-2019}
 }
 \usage{
-predictCFMortality(age, gender, fvc, fev, fevp, bcepacia, uw, h, pi, cfrd,
-  aged)
+predictCFMortality(age, male, fvc, fev1, fev1LastYear, bcepacia,
+  underweight, nHosp, pancreaicInsufficient, CFRelatedDiabetes,
+  ageAtDiagnosis)
 }
 \arguments{
-\item{age}{A number for age, first argument}
+\item{age}{A number for age}
 
-\item{gender}{A binary variable with 0 for females and 1 for males, second arugment}
+\item{male}{A binary variable with 0 for females and 1 for males}
 
-\item{fvc}{A number for percentage of FVC in current year, 3rd argument}
+\item{fvc}{A number for percentage of FVC in current year}
 
-\item{fev}{A number for percentage of FEV1 in current year, 4th argument}
+\item{fev1}{A number for percentage of fev11 in current year}
 
-\item{fevp}{A number for percentage of FEV1 in preceeding year, 5th argument}
+\item{fev1LastYear}{A number for percentage of fev11 in preceeding year}
 
-\item{bcepacia}{A binary with 0 for no B. cepacia complex and 1 for B. cepacia complex, sixth argument}
+\item{bcepacia}{A binary with 0 for no B. cepacia complex and 1 for B. cepacia complex}
 
-\item{uw}{A binary with 0 for not being under weight and 1 otherwise, 7th argument}
+\item{underweight}{A binary with 0 for not being underweight (BMI<18.5) and 1 otherwise}
 
-\item{h}{A number for number of hospitalizations in preceding year, 8th argument}
+\item{nHosp}{number of hospancreaicInsufficienttalizations in preceding year}
 
-\item{pi}{A binary taking 1 for pancreaic insufficient status and 0 otherwise, 9th argument}
+\item{pancreaicInsufficient}{A binary taking 1 for pancreaic insufficient status and 0 otherwise}
 
-\item{cfrd}{A binary taking 0 for not having cf related disease and 1 for having cf related disease, 10th argument}
+\item{CFRelatedDiabetes}{A binary variables for CF related diabetes}
 
-\item{aged}{A number for age at CF diagnosis in years, 11th argument}
+\item{ageAtDiagnosis}{A number for age at CF diagnosis in years}
 }
 \value{
 The code
@@ -40,5 +41,6 @@ The code
 Predicting 1- and 2-year risk of death for patients with cystic fibrosis (CF)
 }
 \examples{
-predictCFMortality(16, 0, 66.7, 47.4, 80.5, 0, 0, 0, 1, ,0 , 0.9)
+predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaicInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
+predictCFMortality(age = 40.4, male = 1, fvc = 25.7, fev1 = 19.2, fev1LastYear = 20, bcepacia = 1, underweight = 1, nHosp = 6, pancreaicInsufficient = 0, CFRelatedDiabetes = 0, ageAtDiagnosis = 27.2)
 }
