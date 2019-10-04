@@ -20,6 +20,8 @@
 #' @export
 predictCFMortality <- function (age, male, fvc, fev1, fev1LastYear, bcepacia, underweight, nHosp, pancreaicInsufficient, CFRelatedDiabetes, ageAtDiagnosis) {
 
+ 
+  
   #1-year Mortality Prediction Model
   lny1 <-  5.702963 - 0.0162938*(male) + 0.7360137*log(fvc/100) + 0.7899955*log(fev1/100) - 0.7302478*(bcepacia) - 0.4588687*(underweight) - 0.0398486*(age) - 0.2818584*(nHosp)
 
@@ -48,7 +50,7 @@ predictCFMortality <- function (age, male, fvc, fev1, fev1LastYear, bcepacia, un
 
   os <- round (s1*s2/100, digits = 2)
   
-  results <- list()
+  results <- list() 
   if (s1 >= 80.00){
     
     results$first_year_survival <- s1
