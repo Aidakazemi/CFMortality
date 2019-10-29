@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/resplab/accept.svg?branch=master)](https://travis-ci.org/resplab/accept)
-[![CRAN Status](https://www.r-pkg.org/badges/version/accept)](https://cran.r-project.org/web/packages/accept/index.html)
+[![Build Status](https://travis-ci.org/resplab/CFMortality.svg?branch=master)](https://travis-ci.org/resplab/CFMortality)
+[![CRAN Status](https://www.r-pkg.org/badges/version/CFMortality)](https://cran.r-project.org/web/packages/CFMortality/index.html)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 # CFMortality
