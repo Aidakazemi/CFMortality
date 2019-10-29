@@ -7,13 +7,7 @@ R package for predicting 1- and 2- year risk of death (with  a threshold risk of
 
 
 ## Installation
-The lastest stable version can be downloaded from CRAN:
-
-```
-install.package ('CFMortality')
-```
-
-Alternatively, you can download the latest development version from GitHub:
+You can install the latest development version from GitHub:
 
 ```
 install.package("devtools")
