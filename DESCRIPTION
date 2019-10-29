@@ -3,7 +3,11 @@ Type: Package
 Title: Cystic Fibrosis Survival Prediction based on Stanojevic Model
 Version: 0.1.0
 Authors@R: c(
-    person("Aida", "Kazemi", email = "aidakazemi10@gmail.com", role = c("aut", "cph")),
+    person("Sanja", "Stanojevic", email = "sanja.stanojevic@sickkids.ca", role = c("aut", "cph")),
+    person("Jenna", "Sykes", email = "SykesJ@smh.ca", role = c("aut", "cph")),
+    person("George A.", "Whitmore", email = "george.whitmore@mcgill.ca", role = c("aut", "cph")),
+    person("Shawn D.", "Aaron", email = "saaron@toh.ca", role = c("aut", "cph")),
+    person("Aida", "Kazemi", email = "aidakazemi10@gmail.com", role = c("aut")),
     person("Amin", "Adibi", email = "adibi@alumni.ubc.ca", role = c("aut", "cre")))
 Maintainer: Amin Adibi <adibi@alumni.ubc.ca>
 Description: 1- and 2- year survival prediction for Cystic Fibrosis based on Stanojevic et al. (2019) <doi:10.1183/13993003.00224-2019>
