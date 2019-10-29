@@ -38,10 +38,6 @@ The **predictCFMortality()** function returns 1- year and 2-year mortality rate 
 ## Cloud-based API Access
 The [PRISM platform](http://prism.resp.core.ubc.ca) allows users to access CFMortality through the cloud. A MACRO-enabled Excel-file can be used to interact with the model and see the results. To download the PRISM Excel template file for CFMortality please refer to the [PRISM model repository](http://resp.core.ubc.ca/ipress/prism).
 
-## User Manual 
-
-
-
 
 ## Citation
 
