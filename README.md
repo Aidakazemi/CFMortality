@@ -19,7 +19,7 @@ devtools::install_github("resplab/CFMortality")
 To get a prediction for mortality rate for first and second year , you will need to pass in patient's risk factors. For example: 
 
 ```
-predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaicInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
+predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
 
 ```
 
