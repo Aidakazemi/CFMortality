@@ -6,11 +6,12 @@
 #' @param fev1  FEV1 percent predicted in the current year (0-150)
 #' @param fev1LastYear FEV1 percent predicted in the preceding year (0-150)
 #' @param bcepacia A binary with 0 for no B. cepacia complex and 1 for B. cepacia complex
-#' @param underweight A binary with 1 for underweight (BMI < 18.5 if age >= 19 or BMI percentile <= 12% if age < 19)
+#' @param underweight A binary with 1 for underweight (BMI < 18.5 if age >= 19 or BMI percentile <= 12\% if age < 19)
 #' @param nHosp An integer number of hospitalizations in preceding year
 #' @param pancreaticInsufficient A binary taking 1 for pancreatic insufficient status and 0 otherwise
 #' @param CFRelatedDiabetes A binary variable for CF related diabetes
 #' @param ageAtDiagnosis A number for age at CF diagnosis in years
+#' @return 1- and 2-year predicted mortality risk 
 
 #' @examples
 #' predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
@@ -18,7 +19,7 @@
 #' predictCFMortality (age = 44, male = 1, fvc = 72.95, fev1 = 55.5, fev1LastYear = 52.5, bcepacia = 0, underweight = 1, nHosp = 0, pancreaticInsufficient = 0, CFRelatedDiabetes = 0, ageAtDiagnosis = 29)
 #' 
 #' @source \url{https://erj.ersjournals.com/content/early/2019/05/08/13993003.00224-2019}
-
+#' @export
 predictCFMortality <- function (age, male, fvc, fev1, fev1LastYear, bcepacia, underweight, nHosp, pancreaticInsufficient, CFRelatedDiabetes, ageAtDiagnosis) {
 
 

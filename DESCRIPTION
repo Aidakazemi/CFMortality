@@ -10,9 +10,8 @@ Authors@R: c(
     person("Aida", "Kazemi", email = "aidakazemi10@gmail.com", role = c("aut")),
     person("Amin", "Adibi", email = "adibi@alumni.ubc.ca", role = c("aut", "cre")))
 Maintainer: Amin Adibi <adibi@alumni.ubc.ca>
-Description: 1- and 2- year survival prediction for Cystic Fibrosis based on Stanojevic et al. (2019) <doi:10.1183/13993003.00224-2019>
+Description: Calculates 1 and 2 year survival prediction for Cystic Fibrosis based on Stanojevic et al. (2019) <doi:10.1183/13993003.00224-2019>
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
-

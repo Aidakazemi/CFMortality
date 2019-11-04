@@ -24,7 +24,7 @@ predictCFMortality(age, male, fvc, fev1, fev1LastYear, bcepacia,
 
 \item{bcepacia}{A binary with 0 for no B. cepacia complex and 1 for B. cepacia complex}
 
-\item{underweight}{A binary with 1 for underweight (BMI < 18.5 if age >= 19 or BMI percentile <= 12% if age < 19)}
+\item{underweight}{A binary with 1 for underweight (BMI < 18.5 if age >= 19 or BMI percentile <= 12\% if age < 19)}
 
 \item{nHosp}{An integer number of hospitalizations in preceding year}
 
@@ -33,6 +33,9 @@ predictCFMortality(age, male, fvc, fev1, fev1LastYear, bcepacia,
 \item{CFRelatedDiabetes}{A binary variable for CF related diabetes}
 
 \item{ageAtDiagnosis}{A number for age at CF diagnosis in years}
+}
+\value{
+1- and 2-year predicted mortality risk
 }
 \description{
 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
