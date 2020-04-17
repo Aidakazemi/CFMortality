@@ -10,8 +10,8 @@ R package for predicting 1- and 2- year risk of death (with  a threshold risk of
 You can install the latest development version from GitHub:
 
 ```
-install.package("devtools")
-devtools::install_github("resplab/CFMortality")
+install.package("remotes")
+remotes::install_github("resplab/CFMortality")
 ```
 
 ### Mortality Prediction
