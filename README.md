@@ -2,8 +2,8 @@
 [![CRAN Status](https://www.r-pkg.org/badges/version/CFMortality)](https://cran.r-project.org/web/packages/CFMortality/index.html)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-## CFMortality
-R package for predicting 1- and 2- year risk of death (with  a threshold risk of death of >= 20% for the 1-year model) in cyctic fibrosis patients based on patients' overal health status described in [https://erj.ersjournals.com/content/54/3/1900224](https://erj.ersjournals.com/content/54/3/1900224).
+## cfmortality
+Allows clinicians to predict 1- and 2- year risk of death (with  a threshold risk of death of >= 20% for the 1-year model) in cyctic fibrosis patients based on patients' overal health status described in [https://erj.ersjournals.com/content/54/3/1900224](https://erj.ersjournals.com/content/54/3/1900224).
 
 
 ### Installation
@@ -11,7 +11,7 @@ You can install the latest development version from GitHub:
 
 ```
 install.package("remotes")
-remotes::install_github("resplab/CFMortality")
+remotes::install_github("resplab/cfmortality")
 ```
 
 ### Mortality Prediction

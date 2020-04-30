@@ -7,9 +7,19 @@
 \url{https://erj.ersjournals.com/content/early/2019/05/08/13993003.00224-2019}
 }
 \usage{
-predictCFMortality(age, male, fvc, fev1, fev1LastYear, bcepacia,
-  underweight, nHosp, pancreaticInsufficient, CFRelatedDiabetes,
-  ageAtDiagnosis)
+predictCFMortality(
+  age,
+  male,
+  fvc,
+  fev1,
+  fev1LastYear,
+  bcepacia,
+  underweight,
+  nHosp,
+  pancreaticInsufficient,
+  CFRelatedDiabetes,
+  ageAtDiagnosis
+)
 }
 \arguments{
 \item{age}{Patient age, in years}
@@ -41,8 +51,14 @@ predictCFMortality(age, male, fvc, fev1, fev1LastYear, bcepacia,
 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
 }
 \examples{
-predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
-predictCFMortality (age = 40.4, male = 1, fvc = 25.7, fev1 = 19.2, fev1LastYear = 20, bcepacia = 1, underweight = 1, nHosp = 6, pancreaticInsufficient = 0, CFRelatedDiabetes = 0, ageAtDiagnosis = 27.2)
-predictCFMortality (age = 44, male = 1, fvc = 72.95, fev1 = 55.5, fev1LastYear = 52.5, bcepacia = 0, underweight = 1, nHosp = 0, pancreaticInsufficient = 0, CFRelatedDiabetes = 0, ageAtDiagnosis = 29)
+predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, 
+                    bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, 
+                    CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
+predictCFMortality (age = 40.4, male = 1, fvc = 25.7, fev1 = 19.2, fev1LastYear = 20, 
+                    bcepacia = 1, underweight = 1, nHosp = 6, pancreaticInsufficient = 0, 
+                    CFRelatedDiabetes = 0, ageAtDiagnosis = 27.2)
+predictCFMortality (age = 44, male = 1, fvc = 72.95, fev1 = 55.5, fev1LastYear = 52.5, 
+                    bcepacia = 0, underweight = 1, nHosp = 0, pancreaticInsufficient = 0, 
+                    CFRelatedDiabetes = 0, ageAtDiagnosis = 29)
 
 }
