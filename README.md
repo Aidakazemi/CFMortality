@@ -19,11 +19,11 @@ remotes::install_github("resplab/cfmortality")
 To get a prediction for mortality rate for first and second year , you will need to pass in patient's risk factors. For example: 
 
 ```
-predictCFMortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
+predictcfmortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, bcepacia = 0, underweight = 0, nHosp = 0, pancreaticInsufficient = 1, CFRelatedDiabetes = 0, ageAtDiagnosis = 0.9)
 
 ```
 
-The **predictCFMortality()** function returns 1- year and 2-year mortality rate of patients with cystic fibrosis with 20% cut-off for risk of death of the 1-year model.
+The **predictcfmortality()** function returns 1- year and 2-year mortality rate of patients with cystic fibrosis with 20% cut-off for risk of death of the 1-year model.
 
 ### Cloud-based API Access
 The [PRISM platform](http://prism.resp.core.ubc.ca) allows users to access CFMortality through the cloud. Fore more info please refer to the [PRISM model repository](http://resp.core.ubc.ca/ipress/prism).

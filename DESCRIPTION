@@ -1,7 +1,7 @@
 Package: cfmortality
 Type: Package
 Title: Cystic Fibrosis Survival Prediction Model based on Stanojevic Model
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person("Sanja", "Stanojevic", email = "sanja.stanojevic@sickkids.ca", role = c("aut", "cph")),
     person("Jenna", "Sykes", email = "SykesJ@smh.ca", role = c("aut", "cph")),

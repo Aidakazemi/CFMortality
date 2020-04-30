@@ -25,7 +25,7 @@
 #' 
 #' @source \url{https://erj.ersjournals.com/content/early/2019/05/08/13993003.00224-2019}
 #' @export
-predictCFMortality <- function (age, male, fvc, fev1, fev1LastYear, bcepacia, underweight, nHosp, pancreaticInsufficient, CFRelatedDiabetes, ageAtDiagnosis) {
+predictcfmortality <- function (age, male, fvc, fev1, fev1LastYear, bcepacia, underweight, nHosp, pancreaticInsufficient, CFRelatedDiabetes, ageAtDiagnosis) {
 
 
   
