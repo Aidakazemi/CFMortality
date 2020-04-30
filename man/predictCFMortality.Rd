@@ -2,7 +2,7 @@
 % Please edit documentation in R/cfmortality.R
 \name{predictcfmortality}
 \alias{predictcfmortality}
-\title{1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)}
+\title{Predicts 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)}
 \source{
 \url{https://erj.ersjournals.com/content/early/2019/05/08/13993003.00224-2019}
 }
@@ -48,7 +48,7 @@ predictcfmortality(
 1- and 2-year predicted mortality risk
 }
 \description{
-1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
+Predicts 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
 }
 \examples{
 predictcfmortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 80.5, 

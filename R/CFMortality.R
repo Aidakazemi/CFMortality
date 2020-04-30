@@ -1,4 +1,4 @@
-#' 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
+#' Predicts 1- and 2- year Mortality Prediction Models in Cystic Fibrosis (CF)
 #' 
 #' @param age Patient age, in years
 #' @param male A binary variable with 0 for females and 1 for males
