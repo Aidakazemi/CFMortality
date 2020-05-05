@@ -25,37 +25,6 @@ predictcfmortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 
 
 The **predictcfmortality()** function returns 1- year and 2-year mortality rate of patients with cystic fibrosis with 20% cut-off for risk of death of the 1-year model.
 
-### Cloud-based API Access
-The [PRISM platform](http://prism.resp.core.ubc.ca) allows users to access CFMortality through the cloud. Fore more info please refer to the [PRISM model repository](http://resp.core.ubc.ca/ipress/prism).
-
-#### R
-
-In R, you can use package [`prism`](https://github.com/resplab/prism) to access the API.
-
-```
-library(prism)
-connect_to_model('CFMortalityPrism', 123456, "cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/CFMortalityPrism/R/gateway/json")
-input <- get_default_input()
-model_run(input)
-```
-
-#### Linux
-
-In Ubuntu, you can call the API with `curl`:
-
-```
-curl -X POST -H "Content-Type: application/json" -d '{"api_key":["123456"],"func":["prism_model_run"],"model_input":[{"age": 16,"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' http://cfmortality.cp.prism-ubc.linaralabs.com//ocpu/library/CFMortalityPrism/R/gateway/json
-```
-
-#### Windows
-
-In Windows PowerShell, you can use `curl` to access the API:
-
-```
-curl -Body '{"api_key":["123456"],"func":["prism_model_run"],"model_input":[{"age": 16,"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' -Method POST -uri http://cfmortality.cp.prism-ubc.linaralabs.com//ocpu/library/CFMortalityPrism/R/gateway/json -Headers @{"Content-type"="application/json"}
-```
-
-
 ### Citation
 
 Please cite: 
