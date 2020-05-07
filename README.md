@@ -34,7 +34,7 @@ In R, you can use package [`prism`](https://github.com/resplab/prism) to access 
 
 ```
 library(prism)
-connect_to_model('CFMortalityPrism', 123456, "cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/CFMortalityPrism/R/gateway/json")
+connect_to_model('cfmortalityPrism', 123456, "cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/cfmortalityPrism/R/gateway/json")
 input <- get_default_input()
 model_run(input)
 ```
