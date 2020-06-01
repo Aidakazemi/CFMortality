@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/resplab/cfmortality.svg?branch=master)](https://travis-ci.org/resplab/cfmortality)
+<!-- badges: start -->
+[![R build status](https://github.com/resplab/CFMortality/workflows/R-CMD-check/badge.svg)](https://github.com/resplab/CFMortality/actions)
+<!-- badges: end -->
 [![CRAN Status](https://www.r-pkg.org/badges/version/cfmortality)](https://CRAN.R-project.org/package=cfmortality)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
