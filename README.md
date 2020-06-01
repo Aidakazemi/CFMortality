@@ -44,17 +44,13 @@ model_run(input)
 In Ubuntu, you can call the API with `curl`:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"api_key":["123456"],"func":["prism_model_run"],"model_input":[{"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' http://cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/cfmortalityPrism/R/gateway/json
+curl \
+-X POST \
+-H "x-prism-auth-user: REPLACE_WITH_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{"func":["prism_model_run"],"model_input":[{"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' \
+https://admin-prism-api.cp.prism-ubc.linaralabs.com/route/cfmortality/run
 ```
-
-#### Windows
-
-In Windows PowerShell, you can use `curl` to access the API:
-
-```
-curl -Body '{"api_key":["123456"],"func":["prism_model_run"],"model_input":[{"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' -Method POST -uri http://cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/cfmortalityPrism/R/gateway/json -Headers @{"Content-type"="application/json"}
-```
-
 
 ### Citation
 
