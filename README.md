@@ -28,17 +28,18 @@ predictcfmortality (age = 16, male = 0, fvc = 66.7, fev1 = 47.4, fev1LastYear = 
 The **predictcfmortality()** function returns 1- year and 2-year mortality rate of patients with cystic fibrosis with 20% cut-off for risk of death of the 1-year model.
 
 ### Cloud-based API Access
-The [PRISM platform](http://prism.resp.core.ubc.ca) allows users to access CFMortality through the cloud. Fore more info please refer to the [PRISM model repository](http://resp.core.ubc.ca/ipress/prism).
+The [Peer Models Network](https://www.peermodelsnetwork.com) allows users to access `cfmortality` through the cloud. Fore more info please refer to the [PRISM model repository](https://models.peermodelsnetwork.com).
 
 #### R
 
-In R, you can use package [`prism`](https://github.com/resplab/prism) to access the API.
+In R, you can use package [`peermodels`](https://github.com/resplab/peermodels) to access the API.
 
 ```
-library(prism)
-connect_to_model('cfmortalityPrism', 123456, "cfmortality.cp.prism-ubc.linaralabs.com/ocpu/library/cfmortalityPrism/R/gateway/json")
+remotes::install_github (resplab/peermodels)
+library(peermodels)
+connect_to_model("cfmortality", api_key = YOUR_API_KEY)
 input <- get_default_input()
-model_run(input)
+results <- model_run(input)
 ```
 
 #### Linux
@@ -51,7 +52,7 @@ curl \
 -H "x-prism-auth-user: REPLACE_WITH_API_KEY" \
 -H "Content-Type: application/json" \
 -d '{"func":["prism_model_run"],"model_input":[{"male": 0,"age": 57,"fvc": 66.7,"fev1": 47.4,"fev1LastYear": 80.5,"bcepacia": 0,"underweight": 0,"nHosp": 0,"pancreaticInsufficient": 1,"CFRelatedDiabetes": 0,"ageAtDiagnosis": 0.9}]}' \
-https://admin-prism-api.cp.prism-ubc.linaralabs.com/route/cfmortality/run
+https://prism.peermodelsnetwork.com/route/cfmortality/run
 ```
 
 ### Citation
